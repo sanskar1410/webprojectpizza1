@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pizza website</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="p.css">
+</head>
+<body>
+    <header id="headerflex" class="header">
+        <section id="flex" class="flex">
+            <p class="logo"><span>pizzaaa...</span></p>
+            <nav class="navbar">
+                <a>Home</a>
+                <a>About</a>
+                <a>Menu</a>
+                <a>Order</a>
+                <a>Faq</a>
+            </nav>
+
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="order-btn" class="fas fa-box"></div>
+                <div id="cart-btn" class="fas fa-shopping-cart"><span>(4)</span></div>
+            </div>
+
+
+        </section>
+
+    </header>
+
+<div class="user-account">
+    <section>
+        <div id="close-account">
+            <span>Close</span>
+        </div>
+        <div class="userline">
+            <p><span>you are not logged in!!</span></p>
+        </div>
+        <div class="display-order">
+            <p>pizza-1 <span>(235 rupee/- X 2 )</span></p>
+            <p>pizza-2 <span>(355 rupee/- X 1 )</span></p>
+            <p>pizza-3 <span>(198 rupee/- X 1 )</span></p>
+            <p>pizza-4 <span>(210 rupee/- X 2 )</span></p>
+        </div>
+    
+    
+        <div class="flex">
+            <form action="" method="post">
+                <h1>login now!!</h1>
+                <input type="email" name="email" required class="box" 
+                placeholder="enter your email" maxlength="50">
+                <input type="password" password="pass" required class="box" 
+                placeholder="enter your password" maxlength="20">
+                <input type="submit" value="login now!!" name="login" 
+                class="btn">
+            </form>
+            <form action="" method="post">
+                <h1>register now!!</h1>
+                <input type="email" name="email" required class="box" 
+                placeholder="enter your email" maxlength="50">
+                <input type="password" password="pass" required class="box" 
+                placeholder="enter your password" maxlength="20">
+                <input type="password" password="cpass" required class="box" 
+                placeholder="confirm your password" maxlength="20">
+                <input type="submit" value="register now!!" name="register" 
+                class="btn">
+            </form>
+        </div>
+    </section>
+</div>
+
+<div class="my-order">
+    <section>
+        <div id="close-order">
+            <span>Close</span>
+        </div>
+
+        <div class="yourorder">
+            <p><span>My Orders</span></p>
+        </div>
+
+        <section class="order1">
+            <div class="ordertype">
+                <p class="dinein"><span>Dine in</span></p>
+                <p><span>Pick up</span></p>
+                <p class="delivery"><span>Home Delivery</span></p>
+            </div>
+    
+            <div class="box">
+                <p>Order Number : <span>HKM-56901</span></p>
+                <p>Order Date : <span>19 may 2024</span></p>
+                <p>Name : <span>Sanskar Gupta</span></p>
+                <p>Contact info : <span>mob.-7089622250</span></p>
+                <p>Delivery Address : <span>Jai Prakash Nagar , Adhartal , Jabalpur</span></p>
+                <p>Order Details : <span>cheese margherita(₹485) X 2 , sweetcorn delight(₹395) X 1 , pesto basil veg(₹490) X 2</span></p>
+                <p>Order Total : <span>2767.1 Rupee( 2345 + 422.1 GST) </span></p>
+                <p>Payment Method : <span>UPI</span></p>
+            </div>
+
+        </section>
+
+        <section class="order2">
+            <div class="ordertype2">
+                <p class="dinein"><span>Dine in</span></p>
+                <p><span>Pick up</span></p>
+                <p><span>Home Delivery</span></p>
+            </div>
+
+            <div class="box">
+                <p>Order Number : <span>HKM-56902</span></p>
+                <p>Order Date : <span>19 may 2024</span></p>
+                <p>Name : <span>Sanskar Gupta</span></p>
+                <p>Contact info : <span>mob.-7089622250</span></p>
+                <p>Dine in Address : <span>Jai Prakash Nagar , Adhartal , Jabalpur</span></p>
+                <p>Order Details : <span> sweetcorn delight(₹390) X 2 , cheese margherita(₹485) X 1 , mexican style (₹445) X 2</span></p>
+                <p>Order Total : <span>2542.9 Rupee( 2155 + 387.9 GST) </span></p>
+                <p>Payment Method : <span>UPI</span></p>
+            </div>
+
+
+        </section>
+
+    </section>
+</div>
+
+<div class="shopping-cart">
+    <section>
+
+        <div id="close-cart">
+            <span>Close</span>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-times"></a>
+            <img src="pictures/margherita-pizza.jpg" alt=" ">
+            <div class="content">
+                <p>Cheese margherita pizza <span>(₹485 X 2)</span></p>
+                <form action="" method="post">
+                    <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+                    <button type="submit" class="fas fa-edit" name="update_qty"></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-times"></a>
+            <img src="pictures/sweetcorn.jpeg" alt=" ">
+            <div class="content">
+                <p>Sweetcorn delight pizza <span>(₹390 X 1)</span></p>
+                <form action="" method="post">
+                    <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+                    <button type="submit" class="fas fa-edit" name="update_qty"></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-times"></a>
+            <img src="pictures/pestopizza.jpg" alt=" ">
+            <div class="content">
+                <p> Pesto cheese n basil pizza <span>(₹495 X 2)</span></p>
+                <form action="" method="post">
+                    <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+                    <button type="submit" class="fas fa-edit" name="update_qty"></button>
+                </form>
+            </div>
+        </div>
+
+        <a href="#order" id="orderincart">Order Now</a>
+    </section>
+</div>
+
+
+<div class="home-bg">
+    <section class="home">
+
+        <div class="slide-container">
+
+            <div class="slide active">
+
+                <div class="image">
+                    <img src="pictures/pngegg1.png" alt="">
+                </div>
+
+                    <div class="content">
+                        <h3>Cheesy Mushroom n Olives</h3>
+                        <div class="fas fa-angle-left" onclick="prev()"> </div>
+                        <div class="fas fa-angle-right" onclick="next()"> </div>
+                    </div>
+            </div>
+
+            <div class="slide">
+
+                <div class="image">
+                    <img src="pictures/pngegg2.png" alt="">
+                </div>
+
+                    <div class="content">
+                        <h3>Chicken N onion Fiesta pizzaa</h3>
+                        <div class="fas fa-angle-left" onclick="prev()"> </div>
+                        <div class="fas fa-angle-right" onclick="next()"> </div>
+                    </div>
+            </div>
+
+            <div class="slide">
+
+                <div class="image">
+                    <img src="pictures/pngegg3.png" alt="">
+                </div>
+
+                    <div class="content">
+                        <h3>Double Cheese Italian Margherita pizzaa</h3>
+                        <div class="fas fa-angle-left" onclick="prev()"> </div>
+                        <div class="fas fa-angle-right" onclick="next()"> </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="rotateimg">
+    <section class="rotate">
+        <img src="pictures/pngeggmiddle1.png" alt="">
+        <script>
+			window.addEventListener('scroll', () => {
+				document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight))
+			})
+		</script>
+
+<div class="boxes">
+    <div class="boxes1">
+        <div class="box">2003</div>
+        <div class="box">2004</div>
+        <div class="box">2005</div>
+        <div class="box">2006</div>
+        <div class="box">2007</div>
+        <div class="box">2008</div>
+    </div>
+   <div class="boxes2">
+    <div class="box">Our sales crossed 1 million</div>
+    <div class="box">Our sales crossed 2 million</div>
+    <div class="box">Our sales crossed 3 million</div>
+    <div class="box">Our sales crossed 4 million</div>
+    <div class="box">Our sales crossed 5 million</div>
+    <div class="box">Our sales crossed 6 million</div>
+   </div>
+</div>
+    </section>
+</div>
+
+
+<div class="thickbar">
+    <div class="box1">
+        <h3>60+</h3>
+        <p>Total number of stores</p>
+    </div>
+    <div class="box2">
+        <h3>80</h3>
+        <p>Awards and recongnition</p>
+    </div>
+    <div class="box3">
+        <h3>10</h3>
+        <p>Total year of expertise</p>
+    </div>
+    <div class="box4">
+        <h3>60M</h3>
+        <p>Happy customers</p>
+    </div>
+</div>
+
+
+<p class="lastpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quae maiores iure placeat autem voluptates velit eum nesciunt culpa vero praesentium non quo natus, aut vel molestias iste obcaecati dolores rerum iusto eaque. Temporibus voluptatum natus labore perspiciatis! Cum aut, suscipit non sequi architecto, temporibus, laudantium voluptates quis labore consequuntur eligendi at ex aspernatur. Officia ipsam sit quas dolores dolore at eligendi, quod accusamus sint cumque suscipit totam dolorum animi, illo minima, inventore eos architecto ratione alias voluptatibus expedita doloremque enim recusandae! Eaque, culpa saepe! Asperiores illo est cumque porro quam, dolorum voluptate, consectetur, iste accusamus ab velit sit debitis.</p>
+
+<section id="about" class="about">
+    <h3 class="aboutheading">about us</h3>
+    <div class="box-container">
+        <div class="box">
+            <img src="pictures/about-1.svg" alt="">
+            <h2>Made with Love</h2>
+            <p>We believe that great pizza starts with a great team. Our dedicated team of experts ensures every bite is a delight, serving up satisfaction with every slice.</p>
+            <a href="#menu" class="aboutmenubtn">Our menu</a>
+        </div>
+        <div class="box">
+            <img src="pictures/about-2.svg" alt="">
+            <h2>Delivery Time 30minute</h2>
+            <p>We believe in serving food hot and fresh so we ensure the delivery of every order under 30 minutes of placing And we are able to serve hot.</p>
+            <a href="#menu" class="aboutmenubtn">Our menu</a>
+        </div>
+        <div class="box">
+            <img src="pictures/about-3.svg" alt="">
+            <h2>Enough to share</h2>
+            <p>We dont compromise with our quantity and quality of our menu , everything is made with love and after you share with other to multiply love </p>
+            <a href="#menu" class="aboutmenubtn">Our menu</a>
+        </div>
+    </div>
+</section>
+
+<section class="menu" id="menu">
+    <h1 class="menuheading"> our menu</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="price">₹<span>572</span></div>
+            <img src="pictures/pngegg21.png" alt="" class="img1">
+            <div class="name">cheese margherita pizza</div>
+            <form action="" method="post">
+                <input type="number" min="1" max="100" value="1" name="qty" class="qty" >
+                <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+            </form>
+        </div>
+
+        <div class="box">
+            <div class="price">₹<span>345</span></div>
+            <img src="pictures/pngegg 22.png" alt="" class="img2">
+            <div class="name">classical cherry tomato</div>
+            <form action="" method="post">
+                <input type="number" min="1" max="100" value="1" name="qty" class="qty" >
+                <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+            </form>
+        </div>
+
+        <div class="box">
+            <div class="price">₹<span>643</span></div>
+            <img src="pictures/pngegg 23.png" alt="" class="img3">
+            <div class="name">cheesy pineapple pizza</div>
+            <form action="" method="post">
+                <input type="number" min="1" max="100" value="1" name="qty" class="qty" >
+                <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+            </form>
+        </div>
+
+        <div class="box">
+            <div class="price">₹<span>643</span></div>
+            <img src="pictures/pngegg24.png" alt="" class="img4">
+            <div class="name">red capsicum and basil</div>
+            <form action="" method="post">
+                <input type="number" min="1" max="100" value="1" name="qty" class="qty" >
+                <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+            </form>
+        </div>
+
+        <div class="box">
+            <div class="price">₹<span>643</span></div>
+            <img src="pictures/pngegg25.png" alt="" class="img5">
+            <div class="name">Chicken Pepperoni pizza</div>
+            <form action="" method="post">
+                <input type="number" min="1" max="100" value="1" name="qty" class="qty" >
+                <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+            </form>
+        </div>
+
+        <div class="box">
+            <div class="price">₹<span>643</span></div>
+            <img src="pictures/pngegg26.png" alt="" class="img6">
+            <div class="name">veggie delight pizza</div>
+            <form action="" method="post">
+                <input type="number" min="1" max="100" value="1" name="qty" class="qty" >
+                <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+            </form>
+        </div>
+
+        <div class="box">
+            <div class="price">₹<span>643</span></div>
+            <img src="pictures/pngegg27.png" alt="" class="img7">
+            <div class="name">Italian farmhouse pizza</div>
+            <form action="" method="post">
+                <input type="number" min="1" max="100" value="1" name="qty" class="qty" >
+                <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+            </form>
+        </div>
+
+        <div class="box">
+            <div class="price">₹<span>643</span></div>
+            <img src="pictures/pngegg28.png" alt="" class="img8">
+            <div class="name">Italian tomato pizza</div>
+            <form action="" method="post">
+                <input type="number" min="1" max="100" value="1" name="qty" class="qty" >
+                <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+            </form>
+        </div>
+
+        <div class="box">
+            <div class="price">₹<span>643</span></div>
+            <img src="pictures/pngegg29.png" alt="" class="img9">
+            <div class="name">hot chillies onion pizza</div>
+            <form action="" method="post">
+                <input type="number" min="1" max="100" value="1" name="qty" class="qty" >
+                <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+            </form>
+        </div>
+
+        <div class="box">
+            <div class="price">₹<span>643</span></div>
+            <img src="pictures/pngegg210.png" alt="" class="img10">
+            <div class="name">bread stick n ketchup</div>
+            <form action="" method="post">
+                <input type="number" min="1" max="100" value="1" name="qty" class="qty" >
+                <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+            </form>
+        </div>
+
+        <div class="box">
+            <div class="price">₹<span>643</span></div>
+            <img src="pictures/pngegg211.png" alt="" class="img11">
+            <div class="name">stuffed garlic bread</div>
+            <form action="" method="post">
+                <input type="number" min="1" max="100" value="1" name="qty" class="qty" >
+                <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+            </form>
+        </div>
+
+        <div class="box">
+            <div class="price">₹<span>643</span></div>
+            <img src="pictures/pngegg212.png" alt="" class="img12">
+            <div class="name">plain salted fries</div>
+            <form action="" method="post">
+                <input type="number" min="1" max="100" value="1" name="qty" class="qty" >
+                <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+            </form>
+        </div>
+
+        <div class="box">
+            <div class="price">₹<span>643</span></div>
+            <img src="pictures/pngegg213.png" alt="" class="img13">
+            <div class="name">mccain fries with ketchup</div>
+            <form action="" method="post">
+                <input type="number" min="1" max="100" value="1" name="qty" class="qty" >
+                <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+            </form>
+        </div>
+
+        <div class="box">
+            <div class="price">₹<span>643</span></div>
+            <img src="pictures/pngegg214.png" alt="" class="img14">
+            <div class="name">orignal coke</div>
+            <form action="" method="post">
+                <input type="number" min="1" max="100" value="1" name="qty" class="qty" >
+                <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+            </form>
+        </div>
+
+        
+
+    </div>
+
+
+</section>
+
+
+<section class="order" id="order">
+    <h2 class="orderheading">order now</h2>
+    
+    <form action="" method="post">
+        <div class="display-order">
+            <p>pizza-1 <span>(235 rupee/- X 2 )</span></p>
+            <p>pizza-2 <span>(355 rupee/- X 1 )</span></p>
+            <p>pizza-3 <span>(198 rupee/- X 1 )</span></p>
+            <p>pizza-4 <span>(210 rupee/- X 2 )</span></p>
+        </div>
+
+    <div class="flex">
+
+        <div class="inputbox">
+            <span>your name :</span>
+            <input type="text" name="name" class="box" required placeholder="enter your name" maxlength="20">
+        </div>
+
+        <div class="inputbox">
+            <span>your number :</span>
+            <input type="text" name="number" class="box" required placeholder="enter your number" min="0" maxlength="10">
+        </div>
+
+        <div class="inputbox">
+            <span>payment method</span>
+            <select name="method" class="box">
+                <option value="cash on delivery">cash on delivery</option>
+                <option value="UPI">UPI</option>
+                <option value="debit cards">debit card</option>
+                <option value="app's wallet">app's wallet</option>
+            </select>
+        </div>
+
+        <div class="inputbox">
+            <span>address line 1:</span>
+            <input type="text" name="flat" class="box" required placeholder="eg. flat no. 123" maxlength="50">
+        </div>
+
+        <div class="inputbox">
+            <span>address line 2:</span>
+            <input type="text" name="street" class="box" required placeholder="eg. street name xyz" maxlength="50">
+        </div>
+
+        <div class="inputbox">
+            <span>pin code</span>
+            <input type="number" name="pincode" class="box" required placeholder="eg. 123456" min="0" maxlength="6">
+        </div>
+
+    </div>
+
+    <input type="submit" value="order now" class="btn" name="order">
+
+</form>
+
+</section>
+
+
+<section class="faq" id="faq">
+    <h1 class="mainheadingfaq">FAQ</h1>
+
+    <div class="faq-container">
+
+        <div class="faqindi">
+            <div class="faqheading">
+                <span>how does it work?</span>
+                <i class="fas fa-angle-down"></i>
+            </div>
+            <p class="faqcontent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet deserunt quod natus sit nostrum hic cupiditate rerum placeat dolor labore!</p>
+        </div>
+
+        <div class="faqindi">
+            <div class="faqheading">
+                <span>how long does it take for delivery?</span>
+                <i class="fas fa-angle-down"></i>
+            </div>
+            <p class="faqcontent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet deserunt quod natus sit nostrum hic cupiditate rerum placeat dolor labore!</p>
+        </div>
+
+        <div class="faqindi">
+            <div class="faqheading">
+                <span>can I order for huge parties?</span>
+                <i class="fas fa-angle-down"></i>
+            </div>
+            <p class="faqcontent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet deserunt quod natus sit nostrum hic cupiditate rerum placeat dolor labore!</p>
+        </div>
+
+        <div class="faqindi">
+            <div class="faqheading">
+                <span>how much protein it contains?</span>
+                <i class="fas fa-angle-down"></i>
+            </div>
+            <p class="faqcontent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet deserunt quod natus sit nostrum hic cupiditate rerum placeat dolor labore!</p>
+        </div>
+
+        <div class="faqindi">
+            <div class="faqheading">
+                <span>is it cooked with oil?</span>
+                <i class="fas fa-angle-down"></i>
+            </div>
+            <p class="faqcontent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet deserunt quod natus sit nostrum hic cupiditate rerum placeat dolor labore!</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-phone"></i>
+            <h2 class="footerheading">phone numbers</h2>
+            <p>+123-456-7890</p>
+            <p>+111-222-3333</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-clock"></i>
+            <h2 class="footerheading">opening hours</h2>
+            <p>10:00 am to 11:59 pm on weekdays</p>
+            <p>12:00 pm to 01:00 am on weekends</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-envelope"></i>
+            <h2 class="footerheading">mail us on</h2>
+            <p>sanskargupta@gmail.com</p>
+            <p>guptasanskar@gmail.com</p>
+        </div>
+
+    </div>
+
+    <div class="credits">
+        &copy; copyright @ 2024 by <span>sanskar gupta</span> | all rights reserved!
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="p.js"></script>
+</body>
+</html>
+
+
+
