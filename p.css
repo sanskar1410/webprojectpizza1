@@ -550,8 +550,33 @@ margin-left: 1.7rem;
 }
 
 
-.lastpara{
+.team .teaminfo{
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.team .lastpara1{
+    font-size: 2.3rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.team .lastpara2{
+    margin-top: 2rem;
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.team .lastpara3{
     font-size: 2rem;
+    text-align: center;
+    padding-left: 20rem;
+    padding-right: 20rem;
 }
 
 .thickbar{
